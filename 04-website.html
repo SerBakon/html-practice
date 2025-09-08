@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Buttons</title>
-    <style>
-      .cart {
-        background-color: yellow;
-      }
-      .buy {
-        background-color: orange;
-      }
-    </style>
+    <title>Variables</title>
   </head>
   <body>
-    <button>
-      click
-    </button>
-    <p></p>
-    <button>
-      Alex
-    </button>
-    <button>
-      xiao long bao
-    </button>
-    <p>
-      Hello, world!
-    </p>
-    <p>
-      Today I deposited moolah in da bank
-    </p>
-    <p>
-      Second part of the hw:
-    </p>
-    <p></p>
-    <button class="cart">
-      Add to cart
-    </button>
-    <button class="buy" onclick="alert('You just bought the item!');">
-      Buy now
-    </button>
+    <p>Cart Quantity</p>
+    <button onclick="console.log('Cart Quantity: ' + cartQuantity);">Show Quantity</button>
+    <button onclick="cartQuantity += 1; console.log('Cart Quantity: ' + cartQuantity);">Add to Cart</button>
+    <button onclick="cartQuantity += 2; console.log('Cart Quantity: ' + cartQuantity);">+2</button>
+    <button onclick="cartQuantity += 3; console.log('Cart Quantity: ' + cartQuantity);">+3</button>
+    <button onclick="cartQuantity = 0; console.log('Cart was reset.\n' + 'Cart Quantity: ' + cartQuantity);">Reset Cart</button>
     <script>
-      alert('Welcome!');
+      let cartQuantity = 0;
     </script>
   </body>
 </html>
