@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+            // const product = {
+            //     name: 'socks',
+            //     price: 1090
+            // };
+            // console.log(product);
+            // console.log(localStorage.getItem('message'));
+            // const product2 = {
+            //     name: 'shirt',
+            //     'delivery-time': '1 day',
+            //     rating: {
+            //         stars: 4.5,
+            //         count: 87
+            //     },
+            //     fun: function function1() {
+            //         console.log('function inside object');
+            //     }
+            // };
+            // console.log(product2.name);
+
+            // console.log(product2['name']);
+
+            // product2.fun();
+
+            // JSON.stringify(product2);
+
+            // localStorage.setItem('message', 'helo')
+
+            const obj1 = {
+                message: 'hello'
+            };
+            const { message } = obj1;
+            const message2 = obj1.message;
+
+            console.log(message + ' ' + message2);
+
+            const obj2 = {
+                message,
+            };
+            console.log(message);
+        </script>
+    </body>
+</html>
